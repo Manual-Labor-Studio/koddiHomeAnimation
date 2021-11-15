@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+.leadspace-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.leadspace {
+    flex-grow: 1;
+    transition-property: flex-grow;
+    transition-duration: 1000ms;
+}
+
+#stage1 {
+    background: linear-gradient(rgba(0, 165, 223, 0.5),rgba(0, 165, 223, 0.5)), url("assets/WomanPhoto.png") no-repeat;
+    background-size: cover;
+}
+
+#stage2 {
+    background: linear-gradient(rgba(245, 74, 97, 0.5),rgba(245, 74, 97, 0.5)), url("assets/CaseStudyPhoto.png") no-repeat;
+    background-size: cover;
+}
+
+#stage3 {
+    background: linear-gradient(rgba(209, 246, 129, 0.5),rgba(209, 246, 129, 0.5)), url("assets/TeamPhoto.png") no-repeat;
+    background-size: cover;
+}
+
+.expand {
+    flex-grow: 10;
+}
