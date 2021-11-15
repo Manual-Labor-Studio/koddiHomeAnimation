@@ -1,5 +1,16 @@
 body {
     margin: 0;
+    color: white;
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 70pt;
+}
+
+h3 {
+    font-size: 34pt;
 }
 
 .leadspace-container {
@@ -12,6 +23,21 @@ body {
     flex-grow: 1;
     transition-property: flex-grow;
     transition-duration: 1000ms;
+    display: flex;
+    flex-basis: 0;
+}
+
+.leadspace svg {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    top: 20vh;
+}
+
+.text {
+    display: inline-block;
+    width: 80%;
+    -webkit-animation: fadeAnimation 1s;
 }
 
 #stage1 {
@@ -19,9 +45,17 @@ body {
     background-size: cover;
 }
 
+#stage1 svg path {
+    fill:#D1F681;
+}
+
 #stage2 {
     background: linear-gradient(rgba(245, 74, 97, 0.5),rgba(245, 74, 97, 0.5)), url("assets/CaseStudyPhoto.png") no-repeat;
     background-size: cover;
+}
+
+#stage2 svg rect {
+    fill: #00A5DF;
 }
 
 #stage3 {
@@ -29,6 +63,24 @@ body {
     background-size: cover;
 }
 
+#stage3 svg {
+    fill:#F54A61;
+    transform: rotate(45deg);
+}
+
 .expand {
     flex-grow: 10;
+}
+
+.hide {
+    display: none;
+}
+
+@-webkit-keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
