@@ -29,7 +29,13 @@ leadspace.forEach(item => {
 });
 
 function reportWindowSize() {
-    leadspace_width = leadspace[1].offsetWidth;
+    var idx;
+    for(var x=0; x<3; x++) {
+        if(x!=previous && x!=index) {
+            idx = x;
+        }
+    }
+    leadspace_width = leadspace[idx].offsetWidth;
     left = leadspace_width/2 - 17;
     svg_margin();
 }
