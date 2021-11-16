@@ -6,9 +6,12 @@ var left = leadspace_width/2 - 17;
 var previous = 0;
 var index;
 
-svgs.forEach(item => {
-    item.style["margin-left"] = left.toString() + "px";
-});
+
+function svg_margin() {
+    svgs.forEach(item => {
+        item.style["margin-left"] = left.toString() + "px";
+    });
+}
 
 leadspace.forEach(item => {
     item.addEventListener('click', function(){
@@ -24,3 +27,12 @@ leadspace.forEach(item => {
         }
     });
 });
+
+function reportWindowSize() {
+    leadspace_width = leadspace[1].offsetWidth;
+    left = leadspace_width/2 - 17;
+    svg_margin();
+}
+  
+window.onresize = reportWindowSize;
+window.onload = svg_margin;
