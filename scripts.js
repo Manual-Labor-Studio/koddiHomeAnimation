@@ -19,7 +19,7 @@ leadspace.forEach(item => {
             text[previous].classList.add("hide");
             setTimeout(function(){
                 text[index].classList.remove("hide");
-            },500);
+            },800);
             previous = index;
         }
     });
