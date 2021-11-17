@@ -91,7 +91,6 @@ function reportWindowSize() {
             }
         }
         leadspace_width = leadspace[idx].offsetWidth;
-        console.log(leadspace_width);
         left = leadspace_width/2 - 17;
 
         desktop();
