@@ -47,12 +47,14 @@ function desktop() {
 
 function mobile_event(e) {
     index = [].indexOf.call(svgs, e.target.parentNode);
-    leadspace[previous].classList.add("no-height");
-    leadspace[index].classList.remove("no-height");
-    svgs[previous].classList.remove("clicked");
-    svgs[index].classList.add("clicked");
-    hide_text(200);
-    previous = index;
+    if(index != previous) {
+        leadspace[previous].classList.add("no-height");
+        leadspace[index].classList.remove("no-height");
+        svgs[previous].classList.remove("clicked");
+        svgs[index].classList.add("clicked");
+        hide_text(200);
+        previous = index;
+    }
 }
 
 function mobile() {
@@ -66,15 +68,6 @@ function mobile() {
 
 function reportWindowSize() {
     width = window.innerWidth;
-    var idx;
-    for(var x=0; x<3; x++) {
-        if(x!=previous && x!=index) {
-            idx = x;
-        }
-    }
-    leadspace_width = leadspace[idx].offsetWidth;
-    left = leadspace_width/2 - 17;
-
     if (width>768) {
         if(eventListener) {
             svgs.forEach(item => {
@@ -86,6 +79,17 @@ function reportWindowSize() {
         leadspace.forEach(item => {
             item.classList.remove("no-height");
         });
+
+        var idx;
+        for(var x=0; x<3; x++) {
+            if(x!=previous && x!=index) {
+                idx = x;
+            }
+        }
+        leadspace_width = leadspace[idx].offsetWidth;
+        console.log(leadspace_width);
+        left = leadspace_width/2 - 17;
+
         desktop();
     }
     else {
