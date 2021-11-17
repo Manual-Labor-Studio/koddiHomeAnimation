@@ -47,6 +47,10 @@ function desktop() {
 
 function mobile_event(e) {
     index = [].indexOf.call(svgs, e.target.parentNode);
+    console.log(index);
+    if(index == -1) {
+        index = 0;
+    }
     if(index != previous) {
         leadspace[previous].classList.add("no-height");
         leadspace[index].classList.remove("no-height");
