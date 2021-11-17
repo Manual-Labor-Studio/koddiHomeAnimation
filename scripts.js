@@ -5,7 +5,8 @@ var leadspace_width = leadspace[1].offsetWidth;
 var left = leadspace_width/2 - 17;
 var previous = 0;
 var width = window.innerWidth;
-var index;
+var index = 0;
+var eventListener = false;
 
 function svg_margin() {
     var margin = 30;
@@ -20,15 +21,16 @@ function svg_margin() {
     });
 }
 
-function hide_text() {
+function hide_text(l) {
     text[previous].classList.add("hide");
     setTimeout(function(){
         text[index].classList.remove("hide");
-    },800);
+    },l);
 }
 
-if(width>768) {
+function desktop() {
     leadspace.forEach(item => {
+        item.classList.remove("no-height");
         item.addEventListener('click', function(){
             index = [].indexOf.call(leadspace, item);
             if(index != previous) {
@@ -36,22 +38,30 @@ if(width>768) {
                 leadspace[previous].classList.remove("expand");
                 svgs[previous].classList.remove("clicked");
                 svgs[index].classList.add("clicked");
-                hide_text();
+                hide_text(800);
                 previous = index;
             }
         });
     });
 }
 
-else {
+function mobile_event(e) {
+    index = [].indexOf.call(svgs, e.target.parentNode);
+    leadspace[previous].classList.add("no-height");
+    leadspace[index].classList.remove("no-height");
+    svgs[previous].classList.remove("clicked");
+    svgs[index].classList.add("clicked");
+    hide_text(200);
+    previous = index;
+}
+
+function mobile() {
     svgs.forEach(item => {
-        item.addEventListener('click', function(){
-            index = [].indexOf.call(svgs, item);
-            leadspace[previous].classList.add("hide");
-            hide_text();
-            previous = index;
-        });
+        if(eventListener == false) {
+            item.addEventListener('click', mobile_event);
+        }
     });
+    eventListener = true;
 }
 
 function reportWindowSize() {
@@ -64,6 +74,28 @@ function reportWindowSize() {
     }
     leadspace_width = leadspace[idx].offsetWidth;
     left = leadspace_width/2 - 17;
+
+    if (width>768) {
+        if(eventListener) {
+            svgs.forEach(item => {
+                item.removeEventListener('click', mobile_event);
+            });
+            eventListener=false;
+        }
+
+        leadspace.forEach(item => {
+            item.classList.remove("no-height");
+        });
+        desktop();
+    }
+    else {
+        for(var x=0; x<3; x++) {
+            if(x!=index) {
+                leadspace[x].classList.add("no-height");
+            }
+        }
+        mobile();
+    }
     svg_margin();
 }
   

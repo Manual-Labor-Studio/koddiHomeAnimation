@@ -38,6 +38,7 @@ h3 {
 
 .leadspace svg:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .text {
@@ -83,6 +84,10 @@ h3 {
 
 .clicked {
     opacity: 1 !important;
+}
+
+.no-height {
+    height: 0px;
 }
 
 .hide {
