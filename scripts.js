@@ -48,7 +48,6 @@ function desktop() {
 
 function mobile_event(e) {
     index = [].indexOf.call(svgs, e.target.parentNode);
-    console.log(index);
     if(index == -1) {
         index = 0;
     }
