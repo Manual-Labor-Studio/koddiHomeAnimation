@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 70pt;
+}
+
+h3 {
+    font-size: 34pt;
+}
+
+.leadspace-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.leadspace {
+    flex-grow: 1;
+    transition-property: flex-grow;
+    transition-duration: 1000ms;
+    display: flex;
+    flex-basis: 0;
+    height: 100%;
+}
+
+.button-svgs {
+    width: 34px;
+    height: 34px;
+    margin-top: 20vh;
+    transition: 300ms ease-in-out;
+    opacity: 0.6;
+}
+
+.button-svgs:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.text {
+    display: inline-block;
+    width: 65%;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    -webkit-animation: fadeAnimation 1s;
+}
+
+.stage1 {
+    background: linear-gradient(rgba(0, 165, 223, 0.5),rgba(0, 165, 223, 0.5)), url("assets/WomanPhoto.png") no-repeat;
+    background-size: cover;
+}
+
+.circle {
+    fill:#D1F681;
+}
+
+.stage2 {
+    background: linear-gradient(rgba(245, 74, 97, 0.5),rgba(245, 74, 97, 0.5)), url("assets/CaseStudyPhoto.png") no-repeat;
+    background-size: cover;
+}
+
+.square {
+    fill: #00A5DF;
+}
+
+.stage3 {
+    background: linear-gradient(rgba(209, 246, 129, 0.5),rgba(209, 246, 129, 0.5)), url("assets/TeamPhoto.png") no-repeat;
+    background-size: cover;
+    color: 	#0a3b70;
+}
+
+.diamond {
+    fill:#F54A61;
+    transform: rotate(45deg);
+}
+
+.expand {
+    flex-grow: 10;
+}
+
+.clicked {
+    opacity: 1 !important;
+}
+
+.no-height {
+    height: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+@-webkit-keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#mobile-slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-svgs {
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 48pt;
+    }
+    
+    h3 {
+        font-size: 28pt;
+    }
+
+    .button-svgs {
+        width: 16px;
+        margin-top: 0;
+        padding: 5px;
+    }
+}

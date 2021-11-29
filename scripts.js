@@ -1,7 +1,8 @@
 var leadspace = document.querySelectorAll('.leadspace');
 var text = document.querySelectorAll('.text');
 var svgs = document.querySelectorAll('.leadspace svg');
-var leadspace_width = leadspace[1].offsetWidth;
+var leadspace_width = getComputedStyle(leadspace[1]).width;
+var leadspace_width_int = parseInt(leadspace_width.replace( /[^\d.]/g, '' ));
 var left = leadspace_width/2 - 17;
 var previous = 0;
 var width = window.innerWidth;
@@ -83,16 +84,6 @@ function reportWindowSize() {
         leadspace.forEach(item => {
             item.classList.remove("no-height");
         });
-
-        var idx;
-        for(var x=0; x<3; x++) {
-            if(x!=previous && x!=index) {
-                idx = x;
-            }
-        }
-        leadspace_width = leadspace[idx].offsetWidth;
-        left = leadspace_width/2 - 17;
-
         desktop();
     }
     else {
@@ -103,6 +94,15 @@ function reportWindowSize() {
         }
         mobile();
     }
+    var idx;
+    for(var x=0; x<3; x++) {
+        if(x!=previous && x!=index) {
+            idx = x;
+        }
+    }
+    leadspace_width = getComputedStyle(leadspace[idx]).width;
+    leadspace_width_int = parseInt(leadspace_width.replace( /[^\d.]/g, '' ));
+    left = leadspace_width_int/2 - 17;
     svg_margin();
 }
   
