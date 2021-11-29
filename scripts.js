@@ -46,11 +46,8 @@ function desktop() {
     });
 }
 
-function mobile_event(e) {
-    index = [].indexOf.call(svgs, e.target.parentNode);
-    if(index == -1) {
-        index = 0;
-    }
+function mobile_event(i) {
+    index = i;
     if(index != previous) {
         leadspace[previous].classList.add("no-height");
         leadspace[index].classList.remove("no-height");
@@ -62,11 +59,15 @@ function mobile_event(e) {
 }
 
 function mobile() {
-    svgs.forEach(item => {
+    for(let i=0; i<3; i++) {
         if(eventListener == false) {
-            item.addEventListener('click', mobile_event);
+            (function(index){
+                svgs[i].onclick = function(){
+                      mobile_event(i);
+                }    
+            })(i);
         }
-    });
+    }
     eventListener = true;
 }
 
