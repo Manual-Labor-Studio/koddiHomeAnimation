@@ -11,3 +11,61 @@
 .product-card img {
     height: 200px;
 }
+
+#money {
+    transform: scale(0);
+    transform-origin: center;
+    animation: draw 500ms linear forwards;
+}
+  
+@keyframes draw {
+    to {
+        transform: scale(1);
+    }
+}
+
+#sun {
+    animation: rotate 1.5s;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#triangle {
+    transform: scaleX(0);
+    transform-origin: 60px;
+    animation: drawTri 1700ms linear forwards;
+}
+
+@keyframes drawTri {
+    0% {
+        transform: scaleX(0);
+    }
+    85% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+#lightning {
+    transform: scale(0);
+    transform-origin: center;
+    animation: draw 500ms linear forwards;
+}
+
+#hair {
+    animation: rotate 800ms;
+    transform-origin: 38px 20px;
+}
