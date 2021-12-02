@@ -3,6 +3,7 @@ function start() {
     leadspace[0].classList.add("expand");
     var text = document.querySelectorAll('.text');
     var svgs = document.querySelectorAll('.leadspace svg');
+    var mob_svgs = document.querySelectorAll(".mobile-svgs svg");
     var leadspace_width = getComputedStyle(leadspace[1]).width;
     var leadspace_width_int = parseInt(leadspace_width.replace( /[^\d.]/g, '' ));
     var left = leadspace_width/2 - 17;
@@ -33,7 +34,6 @@ function start() {
 
     function desktop() {
         leadspace.forEach(item => {
-            item.classList.remove("no-height");
             item.addEventListener('click', function(){
                 index = [].indexOf.call(leadspace, item);
                 if(index != previous) {
@@ -51,12 +51,12 @@ function start() {
     function mobile_event(i) {
         index = i;
         if(index != previous) {
-            leadspace[previous].classList.add("no-height");
+            leadspace[previous].style.display = "none";
             leadspace[previous].classList.remove("expand");
-            leadspace[index].classList.remove("no-height");
+            leadspace[index].style.display = "block";
             leadspace[index].classList.add("expand");
-            svgs[previous].classList.remove("clicked");
-            svgs[index].classList.add("clicked");
+            mob_svgs[previous].classList.remove("clicked");
+            mob_svgs[index].classList.add("clicked");
             hide_text(200);
             previous = index;
         }
@@ -66,7 +66,7 @@ function start() {
         for(let i=0; i<3; i++) {
             if(eventListener == false) {
                 (function(index){
-                    svgs[i].onclick = function(){
+                    mob_svgs[i].onclick = function(){
                         mobile_event(i);
                     }    
                 })(i);
@@ -86,14 +86,14 @@ function start() {
             }
 
             leadspace.forEach(item => {
-                item.classList.remove("no-height");
+                item.style.display = "flex";
             });
             desktop();
         }
         else {
             for(var x=0; x<3; x++) {
                 if(x!=index) {
-                    leadspace[x].classList.add("no-height");
+                    leadspace[x].style.display = "none";
                 }
             }
             mobile();

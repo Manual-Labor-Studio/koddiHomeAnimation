@@ -28,7 +28,7 @@ h3 {
     height: 100%;
 }
 
-.leadspace svg {
+.button-svgs {
     width: 34px;
     height: 34px;
     margin-top: 20vh;
@@ -36,7 +36,7 @@ h3 {
     opacity: 0.6;
 }
 
-.leadspace svg:hover {
+.button-svgs:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -46,7 +46,7 @@ h3 {
     width: 65%;
     margin-top: 5vh;
     margin-left: 5vw;
-    -webkit-animation: fadeAnimation 1s;
+    animation: fadeAnimation 1s;
 }
 
 #stage1 {
@@ -54,16 +54,9 @@ h3 {
     background-size: cover;
 }
 
-#stage1 svg path {
-    fill:#D1F681;
-}
-
 #stage2 {
     background: linear-gradient(rgba(245, 74, 97, 0.5),rgba(245, 74, 97, 0.5)), url("assets/CaseStudyPhoto.png") no-repeat;
     background-size: cover;
-}
-
-#stage2 svg rect {
     fill: #00A5DF;
 }
 
@@ -71,11 +64,6 @@ h3 {
     background: linear-gradient(rgba(209, 246, 129, 0.5),rgba(209, 246, 129, 0.5)), url("assets/TeamPhoto.png") no-repeat;
     background-size: cover;
     color: 	#0a3b70;
-}
-
-#stage3 svg {
-    fill:#F54A61;
-    transform: rotate(45deg);
 }
 
 .expand {
@@ -94,7 +82,30 @@ h3 {
     display: none;
 }
 
-@-webkit-keyframes fadeAnimation {
+.mobile-svgs {
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+}
+
+.mobile-svgs svg {
+    display: none;
+}
+
+.diamond {
+    fill:#F54A61;
+    transform: rotate(45deg);
+}
+
+.square {
+    fill: #00A5DF;
+}
+
+.circle {
+    fill:#D1F681;
+}
+
+@keyframes fadeAnimation {
     0% {
         opacity: 0;
     }
@@ -120,11 +131,17 @@ h3 {
         display: block;
     }
 
+    .mobile-svgs svg {
+        display: inline;
+    }
+
     .leadspace svg {
-        position: absolute;
-        margin-top: 0;
-        bottom: 5vh;
+        display: none;
+    }
+
+    .button-svgs {
         width: 16px;
-        height: 16px;
+        margin-top: 0;
+        padding: 5px;
     }
 }
