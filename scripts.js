@@ -1,5 +1,6 @@
 function start() {
     var leadspace = document.querySelectorAll('.leadspace');
+    leadspace[0].classList.add("expand");
     var text = document.querySelectorAll('.text');
     var svgs = document.querySelectorAll('.leadspace svg');
     var leadspace_width = getComputedStyle(leadspace[1]).width;
@@ -51,7 +52,9 @@ function start() {
         index = i;
         if(index != previous) {
             leadspace[previous].classList.add("no-height");
+            leadspace[previous].classList.remove("expand");
             leadspace[index].classList.remove("no-height");
+            leadspace[index].classList.add("expand");
             svgs[previous].classList.remove("clicked");
             svgs[index].classList.add("clicked");
             hide_text(200);
