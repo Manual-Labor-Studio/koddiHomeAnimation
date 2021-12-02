@@ -4,6 +4,8 @@ function start() {
     var text = document.querySelectorAll('.text');
     var svgs = document.querySelectorAll('.leadspace svg');
     var mob_svgs = document.querySelectorAll(".mobile-svgs svg");
+    svgs[0].classList.add("clicked");
+    mob_svgs[0].classList.add("clicked");
     var leadspace_width = getComputedStyle(leadspace[1]).width;
     var leadspace_width_int = parseInt(leadspace_width.replace( /[^\d.]/g, '' ));
     var left = leadspace_width/2 - 17;
@@ -41,6 +43,8 @@ function start() {
                     leadspace[previous].classList.remove("expand");
                     svgs[previous].classList.remove("clicked");
                     svgs[index].classList.add("clicked");
+                    mob_svgs[previous].classList.remove("clicked");
+                    mob_svgs[index].classList.add("clicked");
                     hide_text(800);
                     previous = index;
                 }
@@ -57,6 +61,8 @@ function start() {
             leadspace[index].classList.add("expand");
             mob_svgs[previous].classList.remove("clicked");
             mob_svgs[index].classList.add("clicked");
+            svgs[previous].classList.remove("clicked");
+            svgs[index].classList.add("clicked");
             hide_text(200);
             previous = index;
         }
