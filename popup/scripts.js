@@ -10,6 +10,7 @@ for(var i=0; i<readmore.length; i++) {
 }
 
 function popup(e) {
+    e.preventDefault();
     modal.classList.add("open");
     var index = [].indexOf.call(readmore, e.target);
     var leader = leaders[index];
