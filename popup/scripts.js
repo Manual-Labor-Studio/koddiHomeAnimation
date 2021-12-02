@@ -1,16 +1,17 @@
 const readmore = document.getElementsByClassName("read-more");
 const modals = document.getElementsByClassName("modal");
 const close = document.getElementsByClassName("close-button");
+var index;
 
 for(var i=0; i<readmore.length; i++) {
     readmore[i].addEventListener("click",popup,false);
+    close[i].addEventListener("click", function(){closepop(index);},false);
 }
 
 function popup(e) {
     e.preventDefault();
-    var index = [].indexOf.call(readmore, e.target);
+    index = [].indexOf.call(readmore, e.target);
     modals[index].classList.add("open");
-    close[index].addEventListener("click", function(){closepop(index);});
 }
 
 function closepop(index) {
