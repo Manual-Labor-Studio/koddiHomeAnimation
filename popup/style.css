@@ -28,17 +28,17 @@ body {
     transform: translate(0, 20%);
 }
 
-#close-button {
+.close-button {
     width: 24px;
     float: right; 
     cursor: pointer;
 }
 
-#close-button rect {
+.close-button rect {
     transition: 0.3s ease-in-out;
 }
 
-#close-button:hover rect {
+.close-button:hover rect {
     transition: 0.3s ease-in-out;
     fill: #2F68A0;
 }
