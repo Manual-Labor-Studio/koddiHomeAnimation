@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.mod {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.leadership {
+    position: relative;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 59, 112, 0.85); /* Black w/ opacity */
+}
+
+.open {
+    display: block !important;
+}
+
+#popup {
+    border-collapse: separate; 
+    max-width: 950px;
+    margin: auto;
+    transform: translate(0, 50%);
+}
+
+#close-button {
+    width: 24px;
+    float: right; 
+}
+
+.koddi-leadership__card-header {
+    padding: 30px 15px 30px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.koddi-leadership__card-header__text {
+    display: inline-block;
+}
+
+.koddi-leadership__card {
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.koddi-leadership__card-body {
+    padding: 30px;
+}
