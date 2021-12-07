@@ -1,21 +1,18 @@
-<svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_662_6262)">
-<path d="M39.0605 32.6554L8.74965 32.6554L23.9051 6.40544L39.0605 32.6554Z" fill="#A8EFCF" fill-opacity="0.5"/>
-<path d="M28.6954 53.6324C26.9462 50.6454 26.0165 47.2495 26.0002 43.788C25.984 40.3265 26.8818 36.9221 28.6029 33.9188C30.324 30.9154 32.8075 28.4197 35.8022 26.6837C38.797 24.9478 42.1969 24.0331 45.6585 24.0322H56.8929" stroke="#0A3B70" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M62.6233 33.7456C64.3758 36.733 65.3082 40.1302 65.3261 43.5936C65.344 47.057 64.4468 50.4638 62.7253 53.4691C61.0038 56.4744 58.5191 58.9717 55.5225 60.7084C52.5259 62.445 49.1237 63.3593 45.6602 63.3589H34.4258" stroke="#0A3B70" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M47.875 15L56.894 24.019L47.875 33.038" stroke="#0A3B70" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M43.4448 54.3271L34.4258 63.3593L43.4448 72.3783" stroke="#0A3B70" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 88 90" style="enable-background:new 0 0 88 90;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A8EFCF;fill-opacity:0.5;}
+	.st1{fill:none;stroke:#0A3B70;stroke-width:3.25;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<path class="st0" d="M39.1,32.7H8.7L23.9,6.4L39.1,32.7z"/>
+	<path class="st1" d="M28.7,53.6c-1.7-3-2.7-6.4-2.7-9.8c0-3.5,0.9-6.9,2.6-9.9c1.7-3,4.2-5.5,7.2-7.2c3-1.7,6.4-2.7,9.9-2.7h11.2"
+		/>
+	<path class="st1" d="M62.6,33.7c1.8,3,2.7,6.4,2.7,9.8c0,3.5-0.9,6.9-2.6,9.9c-1.7,3-4.2,5.5-7.2,7.2c-3,1.7-6.4,2.7-9.9,2.7H34.4"
+		/>
+	<path class="st1" d="M47.9,15l9,9l-9,9"/>
+	<path class="st1" d="M43.4,54.3l-9,9l9,9"/>
 </g>
-<defs>
-<filter id="filter0_d_662_6262" x="4" y="6" width="84" height="84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_662_6262"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_662_6262" result="shape"/>
-</filter>
-</defs>
 </svg>

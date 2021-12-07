@@ -1,3 +1,6 @@
+var lines = document.querySelectorAll("line");
+
 setTimeout(function(){
-    document.getElementById("line").classList.remove("st3");
-},300)
+    lines[1].classList.remove("st2")
+},350);
+

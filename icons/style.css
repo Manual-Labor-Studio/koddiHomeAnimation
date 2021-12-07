@@ -26,36 +26,59 @@
 
 #sun {
     animation: rotate 1.5s;
-    transform-origin: center;
+    transform-origin: 45px 44px;
 }
 
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
-    50% {
-        transform: rotate(-30deg);
+    45% {
+        transform: rotate(180deg);
+    }
+    55% {
+        transform: rotate(180deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }
 
-#triangle {
-    transform: scaleX(0);
-    transform-origin: 60px;
-    animation: drawTri 1700ms linear forwards;
+.shape {
+    transform: scale(0);
+    transform-origin: 60px 15px;
+    animation: growShape 1000ms linear forwards;
+}
+
+@keyframes growShape {
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.grow {
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: 40px 40px;
+    animation: drawTri 500ms linear forwards;
 }
 
 @keyframes drawTri {
     0% {
-        transform: scaleX(0);
+        transform: scale(0);
     }
-    85% {
-        transform: scaleX(0);
+    75% {
+        opacity: 0;
     }
     100% {
-        transform: scaleX(1);
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -68,4 +91,261 @@
 #hair {
     animation: rotate 800ms;
     transform-origin: 38px 20px;
+}
+
+#focus {
+    filter: blur(1px);
+    animation: focus 1000ms linear forwards;
+}
+
+@keyframes focus {
+    to {
+        filter: blur(0);
+    }
+}
+
+#person1 {
+    transform: scale(0);
+    animation: growperson1 1000ms linear forwards;
+    transform-origin: center;   
+}
+
+@keyframes growperson1 {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#person2 {
+    transform: scale(0);
+    animation: growperson2 500ms linear forwards;
+    transform-origin: center;
+}
+
+
+@keyframes growperson2 {
+    to {
+        transform: scale(1);
+    }
+}
+
+#car {
+    animation: drive 1800ms linear forwards;
+}
+
+@keyframes drive {
+    20% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    51% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#sq1 {
+    transform: rotate(0);
+    animation: rotate1 300ms linear forwards;
+    transform-origin: 24.6px 63.6px;
+}
+
+@keyframes rotate1 {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+#sq2 {
+    transform: rotate(0);
+    animation: rotate2 600ms linear forwards;
+    transform-origin: 38px 63.6px;
+}
+
+@keyframes rotate2 {
+    50% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+#sq3 {
+    transform: rotate(0);
+    animation: rotate3 900ms linear forwards;
+    transform-origin: 51.4px 63.6px;
+}
+
+@keyframes rotate3 {
+    75% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+#path1 {
+    transform: translateY(-38px);
+    animation: path1 500ms linear forwards;
+}
+
+@keyframes path1 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#path2 {
+    transform: translateY(-34px);
+    animation: path2 700ms linear forwards;
+}
+
+@keyframes path2 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#path3 {
+    transform: translateY(-24px);
+    animation: path3 900ms linear forwards;
+}
+
+@keyframes path3 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#path4 {
+    transform: translateY(-18px);
+    animation: path4 1100ms linear forwards;
+}
+
+@keyframes path4 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#path5 {
+    transform: translateY(-12px);
+    animation: path5 1300ms linear forwards;
+}
+
+@keyframes path5 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#path6 {
+    transform: translateY(-7px);
+    animation: path6 1500ms linear forwards;
+}
+
+@keyframes path6 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#hand {
+    transform: translateX(-100px);
+    animation: movehand 700ms linear forwards;
+}
+
+@keyframes movehand {
+    to {
+        transform: translateX(0);
+    }
+}
+
+#pop {
+    transform: scale(0);
+    animation: pop 300ms linear forwards;
+    transform-origin: 20px 25px;
+}
+
+@keyframes pop {
+    to {
+        transform: scale(1);
+    }
+}
+
+#small-sig {
+    transform: scale(0.5);
+    transform-origin: center;
+    animation: sig1 300ms linear forwards;
+}
+
+@keyframes sig1 {
+    to {
+        transform: scale(1);
+    }
+}
+
+#large-sig {
+    transform: scale(0);
+    transform-origin: center;
+    animation: sig2 600ms linear forwards;
+}
+
+@keyframes sig2 {
+    0% {
+        tranform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    51% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#arrow {
+    transform: scale(0);
+    animation: arrow 1100ms linear forwards;
+    transform-origin: center 13px;
+}
+
+@keyframes arrow {
+    66% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#loop {
+    transform: rotate(0);
+    animation: loop 700ms linear forwards;
+    transform-origin: 37px 38.5px;
+}
+
+@keyframes loop {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#liquid path {
+    height: 0;
 }
