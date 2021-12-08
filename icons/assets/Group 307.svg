@@ -3,56 +3,32 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 80 76" style="enable-background:new 0 0 80 76;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#DFFEAE;fill-opacity:0.5;}
+	.st0{fill:#F2FEDA;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#0A3B70;}
-	.st2{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
-	.st3{mask:url(#mask0_662_5584_00000039844307667495892840000016664418145647476881_);}
-	.st4{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter_00000179637714662418732260000010541407222211002282_);}
-	.st5{mask:url(#mask1_662_5584_00000101101579300990919390000007497672482547560379_);}
-	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#0A3B70;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#0A3B70;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
-		<path class="st0" d="M63.1,1l15.8,26.2H47.3L63.1,1z"/>
+		<polygon class="st0" points="63.1,1 47.3,27.2 78.9,27 		"/>
 		<path class="st1" d="M69.5,39.4h-9c-0.8,0-1.5-0.6-1.5-1.4s0.7-1.4,1.5-1.4h9c0.8,0,1.5,0.6,1.5,1.4S70.3,39.4,69.5,39.4z"/>
-		<path class="st1" d="M54.4,25.2c-0.4,0-0.7-0.1-1-0.4c-0.6-0.5-0.6-1.4,0-2l6.3-6.1c0.6-0.5,1.5-0.5,2.1,0c0.6,0.5,0.6,1.4,0,2
-			l-6.3,6.1C55.2,25.1,54.8,25.2,54.4,25.2z"/>
-		<defs>
-			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="38.2" y="8" width="2.9" height="11.4">
-				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
-			</filter>
-		</defs>
-		
-			<mask maskUnits="userSpaceOnUse" x="38.2" y="8" width="2.9" height="11.4" id="mask0_662_5584_00000039844307667495892840000016664418145647476881_">
-			<path class="st2" d="M38.2,8h2.9v11.4h-2.9V8z"/>
-		</mask>
-		<g class="st3">
-			<path class="st1" d="M39.6,19.4c-0.8,0-1.5-0.6-1.5-1.4V9.4c0-0.8,0.7-1.4,1.5-1.4c0.8,0,1.5,0.6,1.5,1.4V18
+		<path class="st1" d="M54.4,25.2c-0.4,0-0.7-0.1-1-0.4c-0.6-0.5-0.6-1.4,0-2l6.3-6.1c0.6-0.5,1.5-0.5,2.1,0s0.6,1.4,0,2l-6.3,6.1
+			C55.2,25.1,54.8,25.2,54.4,25.2z"/>
+		<g>
+			<path class="st1" d="M39.6,19.4c-0.8,0-1.5-0.6-1.5-1.4V9.4c0-0.8,0.7-1.4,1.5-1.4s1.5,0.6,1.5,1.4V18
 				C41.1,18.7,40.5,19.4,39.6,19.4z"/>
 		</g>
 		<path class="st1" d="M24.9,25.2c-0.4,0-0.7-0.1-1-0.4l-6.3-6.1c-0.6-0.5-0.6-1.4,0-2c0.6-0.5,1.5-0.5,2.1,0l6.3,6.1
 			c0.6,0.5,0.6,1.4,0,2C25.6,25.1,25.2,25.2,24.9,25.2z"/>
-		<defs>
-			
-				<filter id="Adobe_OpacityMaskFilter_00000134236174888148243000000011154347215255191225_" filterUnits="userSpaceOnUse" x="8.3" y="36.6" width="11.9" height="2.8">
-				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
-			</filter>
-		</defs>
-		
-			<mask maskUnits="userSpaceOnUse" x="8.3" y="36.6" width="11.9" height="2.8" id="mask1_662_5584_00000101101579300990919390000007497672482547560379_">
-			<path style="fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter_00000134236174888148243000000011154347215255191225_);" d="
-				M8.3,36.6h11.9v2.8H8.3V36.6z"/>
-		</mask>
-		<g class="st5">
+		<g>
 			<path class="st1" d="M18.8,39.4h-9c-0.8,0-1.5-0.6-1.5-1.4s0.7-1.4,1.5-1.4h9c0.8,0,1.5,0.6,1.5,1.4S19.6,39.4,18.8,39.4z"/>
 		</g>
-		<path class="st1" d="M18.5,59.6c-0.4,0-0.7-0.1-1-0.4c-0.6-0.5-0.6-1.4,0-2l6.3-6.1c0.6-0.5,1.5-0.5,2.1,0c0.6,0.5,0.6,1.4,0,2
-			l-6.3,6.1C19.3,59.5,18.9,59.6,18.5,59.6z"/>
-		<path class="st1" d="M39.6,68c-0.8,0-1.5-0.6-1.5-1.4V58c0-0.8,0.7-1.4,1.5-1.4c0.8,0,1.5,0.6,1.5,1.4v8.6
-			C41.1,67.4,40.5,68,39.6,68z"/>
+		<path class="st1" d="M18.5,59.6c-0.4,0-0.7-0.1-1-0.4c-0.6-0.5-0.6-1.4,0-2l6.3-6.1c0.6-0.5,1.5-0.5,2.1,0s0.6,1.4,0,2l-6.3,6.1
+			C19.3,59.5,18.9,59.6,18.5,59.6z"/>
+		<path class="st1" d="M39.6,68c-0.8,0-1.5-0.6-1.5-1.4V58c0-0.8,0.7-1.4,1.5-1.4s1.5,0.6,1.5,1.4v8.6C41.1,67.4,40.5,68,39.6,68z"
+			/>
 		<path class="st1" d="M60.8,59.6c-0.4,0-0.7-0.1-1-0.4l-6.3-6.1c-0.6-0.5-0.6-1.4,0-2c0.6-0.5,1.5-0.5,2.1,0l6.3,6.1
 			c0.6,0.5,0.6,1.4,0,2C61.5,59.5,61.1,59.6,60.8,59.6z"/>
 	</g>
 </g>
-<circle class="st6" cx="39.6" cy="38" r="12.3"/>
+<circle class="st2" cx="39.6" cy="38" r="12.3"/>
 </svg>

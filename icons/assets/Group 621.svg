@@ -3,11 +3,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 76 76" style="enable-background:new 0 0 76 76;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.5;fill:#A8EFCF;enable-background:new    ;}
+	.st0{fill:#DAF5E7;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#0A3B70;}
 	.st2{fill:none;stroke:#0A3B70;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M60.5,49l15.2,26.2H45.3L60.5,49z"/>
+<polygon class="st0" points="60.5,48.9 45.3,75.2 75.7,75.2 "/>
 <path class="st1" d="M12.7,57.3h51.1V19.7H12.7V57.3z M65.1,60H11.3c-0.7,0-1.3-0.6-1.3-1.3V18.3c0-0.7,0.6-1.3,1.3-1.3h53.8
 	c0.7,0,1.3,0.6,1.3,1.3v40.3C66.4,59.4,65.8,60,65.1,60z"/>
 <path class="st1" d="M65.1,31.8H11.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3h53.8c0.7,0,1.3,0.6,1.3,1.3

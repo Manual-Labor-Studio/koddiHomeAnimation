@@ -1,9 +1,16 @@
-<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle opacity="0.5" cx="61" cy="15" r="15" fill="#F54A61"/>
-<path d="M25.1434 23.7192H18.7148V30.152H25.1434V23.7192Z" stroke="#0A3B70" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.7148 36.585H57.2863" stroke="#0A3B70" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.7148 43.0176H33.5906" stroke="#0A3B70" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M31.5723 23.7192H57.2866" stroke="#0A3B70" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M31.5723 30.1519H57.2866" stroke="#0A3B70" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M63.7137 49.4504V17.2866H12.2852V58.7135L24.1137 49.4504H63.7137Z" stroke="#0A3B70" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 76 76" style="enable-background:new 0 0 76 76;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F0ABB1;}
+	.st1{fill:none;stroke:#0A3B70;stroke-width:2.75;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<circle class="st0" cx="61" cy="15" r="15"/>
+<path class="st1" d="M25.1,23.7h-6.4v6.4h6.4V23.7z"/>
+<path class="st1" d="M18.7,36.6h38.6"/>
+<path class="st1" d="M18.7,43h14.9"/>
+<path class="st1" d="M31.6,23.7h25.7"/>
+<path class="st1" d="M31.6,30.2h25.7"/>
+<path class="st1" d="M63.7,49.5V17.3H12.3v41.4l11.8-9.3H63.7z"/>
 </svg>

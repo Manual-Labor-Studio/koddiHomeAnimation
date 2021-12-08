@@ -3,13 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 76 76" style="enable-background:new 0 0 76 76;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FD8282;fill-opacity:0.5;}
+	.st0{fill:#F6C3C3;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#0A3B70;}
 	.st2{fill:none;stroke:#0A3B70;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <circle class="st0" cx="61" cy="15" r="15"/>
-<path class="st1" d="M38.5,13C24.4,13,13,24.4,13,38.5C13,52.6,24.4,64,38.5,64C52.6,64,64,52.6,64,38.5C64,24.4,52.6,13,38.5,13z
-	 M38.5,67C22.8,67,10,54.2,10,38.5C10,22.8,22.8,10,38.5,10C54.2,10,67,22.8,67,38.5C67,54.2,54.2,67,38.5,67z"/>
+<path class="st1" d="M38.5,13C24.4,13,13,24.4,13,38.5S24.4,64,38.5,64S64,52.6,64,38.5S52.6,13,38.5,13z M38.5,67
+	C22.8,67,10,54.2,10,38.5S22.8,10,38.5,10S67,22.8,67,38.5S54.2,67,38.5,67z"/>
 <line class="st2" x1="38.5" y1="23.8" x2="38.5" y2="43.2"/>
 <circle class="st1" cx="38.5" cy="50.9" r="2.2"/>
 </svg>
