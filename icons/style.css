@@ -4,6 +4,20 @@
     margin: 50px;
 }
 
+.gif, .still-gif {
+    height: 100px;
+    position: absolute;
+}
+
+.gif-container {
+    height: 200px;
+    position: relative;
+}
+
+.paused {
+    display: none;
+}
+
 .product-card {
     display: inline-block;
 }

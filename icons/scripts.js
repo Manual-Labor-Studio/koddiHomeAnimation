@@ -28,7 +28,7 @@ var gif_ff = {
     "arrowgif": arrow
 }
 
-var gifs = document.querySelectorAll(".gifs");
+var gifs = document.querySelectorAll(".gif");
 
 for(var i=0; i<gifs.length; i++) {
     gifs[i].addEventListener("mouseover", function(e) {

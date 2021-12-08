@@ -3,10 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 76 76" style="enable-background:new 0 0 76 76;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#74CAF4;fill-opacity:0.5;}
+	.st0{fill:#BAE3F8;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#0A3B70;}
 	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FCFCFC;stroke:#0A3B70;stroke-width:3;stroke-miterlimit:10;}
-	.st3{fill:#BAE3F8;}
 </style>
 <rect y="46" class="st0" width="30" height="30"/>
 <path class="st1" d="M63.2,24H12.4c-1.8,0-3.3-0.7-3.3-1.5s1.5-1.5,3.3-1.5h50.9c1.8,0,3.3,0.7,3.3,1.5C66.5,23.3,65.1,24,63.2,24z"
@@ -18,5 +17,4 @@
 <circle class="st2" cx="36.2" cy="22.5" r="3.6"/>
 <circle class="st2" cx="13.9" cy="38" r="3.6"/>
 <circle class="st2" cx="54.5" cy="52.7" r="3.6"/>
-<rect y="46" class="st3" width="30" height="30"/>
 </svg>

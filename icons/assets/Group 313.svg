@@ -4,14 +4,14 @@
 	 viewBox="0 0 76 76" style="enable-background:new 0 0 76 76;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#0A3B70;}
-	.st1{fill:#A8EFCF;fill-opacity:0.5;}
+	.st1{fill:#C9F6E4;}
 	.st2{fill:none;stroke:#0A3B70;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M13,45.7h51.2V30.6H13V45.7z M65.8,48.7H11.5c-0.8,0-1.5-0.7-1.5-1.5V29.1c0-0.8,0.7-1.5,1.5-1.5h54.3
 	c0.8,0,1.5,0.7,1.5,1.5v18.1C67.3,48,66.6,48.7,65.8,48.7z"/>
 <path class="st0" d="M35.6,42.7H17.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h18.1c0.8,0,1.5,0.7,1.5,1.5S36.5,42.7,35.6,42.7z"/>
 <path class="st0" d="M44.7,36.6H17.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h27.1c0.8,0,1.5,0.7,1.5,1.5S45.5,36.6,44.7,36.6z"/>
-<path class="st1" d="M45.8,0.2l30.3,0L60.9,26.4L45.8,0.2z"/>
+<polygon class="st1" points="45.8,0.2 60.9,26.5 76.1,0.2 "/>
 <line class="st2" x1="48.2" y1="28.6" x2="61.7" y2="15.1"/>
 <line class="st2" x1="15.7" y1="61.1" x2="29.2" y2="47.6"/>
 <line class="st2" x1="21.6" y1="21.1" x2="29.2" y2="28.6"/>
