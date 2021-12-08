@@ -27,6 +27,8 @@ function start() {
         });
     }
 
+    svg_margin();
+    
     function hide_text(l) {
         text[previous].classList.add("hide");
         setTimeout(function(){
