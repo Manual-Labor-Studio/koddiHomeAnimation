@@ -13,20 +13,22 @@ function loopGif(i,t) {
     setTimeout(function(){pauseGif(i)},t);
 }
 
+function loop() {
+    setTimeout(function(){
+        loopGif(0,1300)
+    }, 1000);
+    
+    // start pointer animation 
+    setTimeout(function(){
+        loopGif(1, 1000);
+    }, 6000);
+    
+    // start computer animation 
+    setTimeout(function(){
+        loopGif(2, 1400)
+    }, 11000);
+}
+
 // start graph animation (maybe start on scroll once it comes in view eventually?)
-setTimeout(function(){
-    loopGif(0,3000)
-    setInterval(function(){loopGif(0,3000)},14000);
-}, 1000);
-
-// start pointer animation 
-setTimeout(function(){
-    loopGif(1, 1000);
-    setInterval(function(){loopGif(1, 1000)}, 14000);
-}, 6000);
-
-// start computer animation 
-setTimeout(function(){
-    loopGif(2, 1600)
-    setInterval(function(){loopGif(2,1600)}, 14000);
-}, 11000);
+loop();
+setInterval(loop,17000);
