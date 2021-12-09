@@ -16,7 +16,7 @@ h3 {
 .leadspace-container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 .leadspace {
@@ -84,7 +84,7 @@ h3 {
 
 .mobile-svgs {
     position: absolute;
-    bottom: 10vh;
+    bottom: 100px;
     left: 5vw;
 }
 
