@@ -50,18 +50,18 @@ h3 {
 }
 
 #stage1 {
-    background: linear-gradient(rgba(0, 165, 223, 0.5),rgba(0, 165, 223, 0.5)), url("assets/WomanPhoto.png") no-repeat;
+    background: linear-gradient(rgba(0, 165, 223, 0.5),rgba(0, 165, 223, 0.8)), url("assets/WomanPhoto.png") no-repeat;
     background-size: cover;
 }
 
 #stage2 {
-    background: linear-gradient(rgba(245, 74, 97, 0.5),rgba(245, 74, 97, 0.5)), url("assets/CaseStudyPhoto.png") no-repeat;
+    background: linear-gradient(rgba(245, 74, 97, 0.5),rgba(245, 74, 97, 0.8)), url("assets/CaseStudyPhoto.png") no-repeat;
     background-size: cover;
     fill: #00A5DF;
 }
 
 #stage3 {
-    background: linear-gradient(rgba(209, 246, 129, 0.5),rgba(209, 246, 129, 0.5)), url("assets/TeamPhoto.png") no-repeat;
+    background: linear-gradient(rgba(209, 246, 129, 0.5),rgba(209, 246, 129, 0.8)), url("assets/TeamPhoto.png") no-repeat;
     background-size: cover;
     color: 	#0a3b70;
 }
@@ -90,19 +90,24 @@ h3 {
 
 .mobile-svgs svg {
     display: none;
+    fill: white;
+}
+
+#mobile-diamond {
+    transform: rotate(45deg);
 }
 
 .diamond {
-    fill:#F54A61;
+    fill:#F54A61 !important;
     transform: rotate(45deg);
 }
 
 .square {
-    fill: #00A5DF;
+    fill: #00A5DF !important;
 }
 
 .circle {
-    fill:#D1F681;
+    fill:#D1F681 !important;
 }
 
 @keyframes fadeAnimation {

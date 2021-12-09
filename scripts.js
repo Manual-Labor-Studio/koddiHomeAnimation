@@ -36,6 +36,29 @@ function start() {
         },l);
     }
 
+    function mobilesvgs() { 
+        mob_svgs[previous].classList.remove("clicked");
+        mob_svgs[index].classList.add("clicked");
+        if(index==0) {
+            mob_svgs[index].classList.add("circle");
+        }
+        else if(index==1) {
+            mob_svgs[index].classList.add("square");
+        }
+        else if(index==2) {
+            mob_svgs[index].classList.add("diamond");
+        }
+        if(previous==0 && previous != index) {
+            mob_svgs[previous].classList.remove("circle");
+        }
+        else if(previous==1 && previous != index) {
+            mob_svgs[previous].classList.remove("square");
+        }
+        else if(previous==2 && previous != index) {
+            mob_svgs[previous].classList.remove("diamond");
+        }
+    }
+
     function desktop() {
         leadspace.forEach(item => {
             item.addEventListener('click', function(){
@@ -45,8 +68,7 @@ function start() {
                     leadspace[previous].classList.remove("expand");
                     svgs[previous].classList.remove("clicked");
                     svgs[index].classList.add("clicked");
-                    mob_svgs[previous].classList.remove("clicked");
-                    mob_svgs[index].classList.add("clicked");
+                    mobilesvgs();
                     hide_text(800);
                     previous = index;
                 }
@@ -61,8 +83,7 @@ function start() {
             leadspace[previous].classList.remove("expand");
             leadspace[index].style.display = "block";
             leadspace[index].classList.add("expand");
-            mob_svgs[previous].classList.remove("clicked");
-            mob_svgs[index].classList.add("clicked");
+            mobilesvgs();
             svgs[previous].classList.remove("clicked");
             svgs[index].classList.add("clicked");
             hide_text(200);
@@ -71,6 +92,7 @@ function start() {
     }
 
     function mobile() {
+        mobilesvgs();
         for(let i=0; i<3; i++) {
             if(eventListener == false) {
                 (function(index){
@@ -115,6 +137,7 @@ function start() {
         leadspace_width = getComputedStyle(leadspace[idx]).width;
         leadspace_width_int = parseInt(leadspace_width.replace( /[^\d.]/g, '' ));
         left = leadspace_width_int/2 - 17;
+        mobilesvgs();
         svg_margin();
     }
     
