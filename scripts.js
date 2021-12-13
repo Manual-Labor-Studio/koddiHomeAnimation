@@ -69,7 +69,7 @@ function start() {
                     svgs[previous].classList.remove("clicked");
                     svgs[index].classList.add("clicked");
                     mobilesvgs();
-                    hide_text(800);
+                    hide_text(1000);
                     previous = index;
                 }
             });
