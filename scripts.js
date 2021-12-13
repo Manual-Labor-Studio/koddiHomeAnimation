@@ -13,6 +13,8 @@ function start() {
     var width = window.innerWidth;
     var index = 0;
     var eventListener = false;
+    var autoscroll;
+    var scroll_once = false;
 
     function svg_margin() {
         var margin = 30;
@@ -28,6 +30,21 @@ function start() {
     }
 
     svg_margin();
+
+    for(var i=0; i<leadspace.length; i++) {
+        leadspace[i].addEventListener("mouseover", function(e){
+            var idx = [].indexOf.call(leadspace, e.target);
+            if(idx != index && idx != -1) {
+                e.target.childNodes[1].style.opacity = 1;
+            }
+        });
+        leadspace[i].addEventListener("mouseout", function(e){
+            var idx = [].indexOf.call(leadspace, e.target);
+            if(idx != index && idx != -1) {
+                e.target.childNodes[1].style.opacity = 0.5;
+            }
+        });
+    }
     
     function hide_text(l) {
         text[previous].classList.add("hide");
@@ -62,6 +79,9 @@ function start() {
     function desktop() {
         leadspace.forEach(item => {
             item.addEventListener('click', function(){
+                if(autoscroll != undefined) {
+                    clearInterval(autoscroll);
+                }
                 index = [].indexOf.call(leadspace, item);
                 if(index != previous) {
                     item.classList.add("expand");
@@ -97,6 +117,9 @@ function start() {
             if(eventListener == false) {
                 (function(index){
                     mob_svgs[i].onclick = function(){
+                        if(autoscroll != undefined) {
+                            clearInterval(autoscroll);
+                        }
                         mobile_event(i);
                     }    
                 })(i);
@@ -105,9 +128,66 @@ function start() {
         eventListener = true;
     }
 
+    function desktop_autoscroll() {
+        var x = 1;
+        autoscroll = setInterval(function(){
+            index = x;
+            if(x==0) {
+                previous = 2;
+            }
+            else {
+                previous = x-1;
+            }
+            leadspace[x].classList.add("expand");
+            leadspace[previous].classList.remove("expand");
+            svgs[previous].classList.remove("clicked");
+            svgs[index].classList.add("clicked");
+            mobilesvgs();
+            hide_text(1000);
+            previous = index;
+            x++;
+            if(x==3) {
+                x=0;
+            }
+        }, 5000);
+    }
+
+    function mobile_autoscroll() {
+        var x = 1;
+        autoscroll = setInterval(function(){
+            index = x;
+            if(x==0) {
+                previous = 2;
+            }
+            else {
+                previous = x-1;
+            }
+            leadspace[previous].style.display = "none";
+            leadspace[previous].classList.remove("expand");
+            leadspace[index].style.display = "block";
+            leadspace[index].classList.add("expand");
+            mobilesvgs();
+            svgs[previous].classList.remove("clicked");
+            svgs[index].classList.add("clicked");
+            hide_text(200);
+            previous = index;
+            x++;
+            if(x==3) {
+                x=0;
+            }
+        }, 5000);
+    }
+
     function reportWindowSize() {
+        if(autoscroll != undefined) {
+            clearInterval(autoscroll);
+        }
         width = window.innerWidth;
         if (width>768) {
+            if(scroll_once == false) {
+                scroll_once = true;
+                desktop_autoscroll();
+            }
             if(eventListener) {
                 svgs.forEach(item => {
                     item.removeEventListener('click', mobile_event);
@@ -121,6 +201,10 @@ function start() {
             desktop();
         }
         else {
+            if(scroll_once == false) {
+                scroll_once = true;
+                mobile_autoscroll();
+            }
             for(var x=0; x<3; x++) {
                 if(x!=index) {
                     leadspace[x].style.display = "none";

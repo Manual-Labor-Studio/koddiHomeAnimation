@@ -37,7 +37,7 @@ h3 {
 }
 
 .button-svgs:hover {
-    opacity: 1;
+    opacity: 1 !important;
     cursor: pointer;
 }
 
