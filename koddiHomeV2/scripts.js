@@ -39,7 +39,7 @@ function desktop() {
                 leadspace[previous].classList.remove("expand");
                 desktop_svgs[previous].classList.remove("clicked");
                 desktop_svgs[index].classList.add("clicked");
-                hide_text(800);
+                hide_text(1000);
                 previous = index;
             }
         });
